@@ -2,7 +2,7 @@ document.getElementById('pay').addEventListener('click', async () => {
     const phone = document.getElementById('phone').value.trim();
     const status = document.getElementById('status');
 
-    if (!phone.startsWith('+254') || phone.length !== 13) {
+    if (!phone.startsWith('254') || phone.length !== 13) {
         status.textContent = 'Enter a valid Kenyan phone number (+2547XXXXXXXX)';
         return;
     }
