@@ -10,7 +10,7 @@ document.getElementById('pay').addEventListener('click', async () => {
     status.textContent = 'Processing payment...';
 
     try {
-        const response = await fetch('https://perontips-backend.onrender.com', {
+        const response = await fetch('https://perontips-backend.onrender.com/pay', {
             method: 'POST',
             headers: { 'Content-Type': 'application/json' },
             body: JSON.stringify({ phone })
